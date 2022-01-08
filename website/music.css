@@ -1,0 +1,150 @@
+*{padding: 0;margin: 0;box-sizing: border-box;list-style:none;text-decoration: none;}
+html{font-size: 1.5rem;}
+body{transition: all 5s;background-image:url(bg.gif);background-repeat: no-repeat;background-size: 100% 100%;}
+#mynav{transition: all 1s;width: 100%;height: 4rem;background-color: rgb(233, 233, 233);}
+.logo{display: flex;}
+.myul{ width:80%; height: 80%; display: flex;justify-content: right;align-items: center;}
+.myul li{transition: all 1s;padding:0.5rem;  }
+.myul li a{color: Brown;  }
+.myul li a:hover{color: rgb(0, 0, 0);}
+.container{transition: all 5s;   display: flex; width: 100%;height: 100%; background-image: url(bg1.png);background-repeat: no-repeat;background-size: 100% 100%; border-radius: 1rem; }
+.musicimg{transition: all 5s;height:22rem;width: 32%; z-index: 1;background-image: url(Music.gif);background-repeat: no-repeat;background-size: 100% 100%; border-radius: 1rem; margin: 3rem;}
+.musicquotes{transition: all 5s;padding-left: 13%; padding-top: 10rem;font-size: 1.8rem;}
+.section{ transition:  all 5s; margin-top: 25%;display: flex; width: 100%;height: 100%; background-image: url(bg1.png);background-repeat: no-repeat;background-size: 100% 100%; border-radius: 1rem; }
+.musicimg2{transition: all 5s; height:22rem;width: 22rem; z-index: 1;background-image: url(music2.gif);background-repeat: no-repeat;background-size: 100% 100%; border-radius: 1rem; margin: 3rem;}
+.mytimeupdate{color: white; font-size: 2rem;}
+.buy{
+    text-decoration: none;
+    /* height: 20px;
+    width: 200px; */
+    position: relative;
+    /* left: 50%;
+    top: 10rem; */
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.1;
+    font-size: 1.3;
+    overflow: hidden;
+    transition:0.2s;
+font-weight: bolder;
+    margin-top: 3rem;
+    background-color: orange;
+    border-radius: 3rem;box-shadow: 0 0 1.8px #2196f3,0 0 2.5rem #2196f3, 0 0 5rem #2196f3;
+
+}
+.buy:hover{
+    color: rgb(0, 0, 0);
+
+    background: #ffffff;
+    border-radius: 3rem;box-shadow: 0 0 1.8px #2196f3,0 0 2.5rem #2196f3, 0 0 5rem #2196f3;
+
+  transition-delay: 1.5s;
+}
+.buy span{
+    position: absolute;
+    display: block;
+
+}
+.buy span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 0.5rem;
+    background: linear-gradient(90deg, transparent, #ffffff);
+
+}
+.buy:hover span:nth-child(1){
+   left: 100%;
+   transition:0.5s;
+}
+
+.buy span:nth-child(3){
+   bottom: 0;
+ right: -100%;
+    width: 100%;
+    height: 0.5rem;
+    background: linear-gradient(90deg, transparent, #ffffff);
+
+}
+.buy:hover span:nth-child(3){
+ right: 100%;
+   transition:1s;
+   transition-delay: 0.75s;
+}
+.buy span:nth-child(2){
+   right: 0;
+ top: -100%;
+    width: 0.5rem;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ffffff);
+}
+.buy:hover span:nth-child(2){
+ top: 100%;
+   transition:1s;
+   transition-delay: 0.5s;
+}
+.buy span:nth-child(4){                      
+   left: 0;
+ bottom: -100%;
+    width: 0.5rem;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ffffff);
+
+}
+.buy:hover span:nth-child(4){
+ bottom: 100%;
+   transition:1s;
+   transition-delay: 1s;
+}
+#check{display: none;}
+.line{display:none ;}
+ /* ------------------------------------------------------------------  */
+/* Screen media querryes  */
+@media screen and (max-width:950px) {
+    html{font-size:1rem;}
+    .musicimg{height: 25rem; width: 30%;}
+}
+
+@media screen and (max-width:850px) {
+    html{font-size:0.8rem;}
+    .musicimg{height: 25rem; width: 30%;}
+}
+
+@media screen and (max-width:750px) {
+    html{font-size:0.6rem;}
+    .musicimg{height: 25rem; width: 30%;}
+}
+@media screen and (max-width:450px) {
+    html{font-size:0.4rem;}
+    .musicimg{height: 25rem; width: 30%;}
+     .myul{display:block;width: 100%; height:40% ; background-color: #b2c0e8; margin-top: 10%; text-align: center;position:absolute; top:-100%;left: 0;transition: all 1s;border-radius: 1rem; }
+.myul li{padding-top: 6rem;}
+     .myul li a{color: rgb(0, 0, 0); font-size: 1.8rem;}
+     .myul li a:hover{color: teal;}
+.top{width:2rem; height:0.3rem; background-color: rgb(0, 0, 0);margin-top: 0.2rem;}
+.bottom{width: 2rem; height:0.3rem ; background-color: rgb(0, 0, 0);margin-top: 0.2rem;}
+.middle{width: 2rem; height: 0.3rem; background-color: rgb(0, 0, 0);margin-top: 0.1rem;}
+.line{display: block;transition: all 1s; }
+/* background-color:black;float: right; width: 0.3rem;margin-top: 0.1rem; */
+.checkbtn{float: right; margin-right: 2rem;}
+#check:checked~.myul {top: 0;}
+#check:checked~.checkbtn>.top{
+    transform: rotate(135deg);
+    margin-top: 0.5rem;
+    height:0.2rem;
+  
+}
+#check:checked~.checkbtn > .middle{
+    opacity: 0;
+  
+}
+#check:checked~.checkbtn>.bottom{
+    transform: rotate(-135deg);
+  margin-top: -0.6rem;
+  height:0.2rem;
+}
+}
+
